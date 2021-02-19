@@ -1,13 +1,16 @@
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 import ContextProvider from "./context";
 import React from "react";
 import ReactDOM from "react-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ContextProvider>
-      <App />
-    </ContextProvider>
+    <BrowserRouter>
+      <ContextProvider>
+        <App />
+      </ContextProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
